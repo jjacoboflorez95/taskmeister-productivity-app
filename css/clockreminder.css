@@ -1,0 +1,248 @@
+main {
+	text-align: center;
+}
+
+#todolistapp label {
+	width: 100%;
+	font-family: Monotype Corsiva;
+	font-size: 250%;
+}
+
+#todolistapp {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+}
+
+#divmainImage {
+	margin-top: 80px;
+	width: 55%;
+}
+
+#todolistmainImage {
+	width: 20%;
+	height: 250px;
+}
+
+#inputContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-top: 40px;
+	width: 40%;
+}
+
+#inputContainer.hide {
+	display: none;
+}
+
+/*Add*/
+.add {
+	width: 100%;
+}
+
+.add input {
+	font-size: 125%;
+	padding: 12px 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Add Task*/
+#addtask {
+	flex-grow: 1;
+	position: relative;
+}
+
+#addtask img {
+	position: absolute;
+	top: 30%;
+	transform: translateY(-12%);
+	left: 2%;
+	width: 20px;
+	height: 20px;
+}
+
+#addtask input {
+	width: 100%;
+	text-indent: 5.5%;
+}
+
+/*Add Time*/
+#addtime {
+	flex-grow: 1;
+	display: flex;
+	align-content: center;
+	margin-top: 20px;
+}
+
+#addtime input[type="text"] {
+	flex-grow: 0;
+	margin-right: 10px;
+	text-indent: 7%;
+}
+
+#addtime label {
+	font-size: 190%;
+}
+
+#addtime input[type="radio"] {
+	margin-right: 10px;
+}
+
+#timeoptions {
+	flex-grow: 1;
+	padding: 12px 0px;
+	text-align: left;
+}
+
+/*Span Error*/
+.error {
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	font-size: 105%;
+	color: rgba(139, 0, 0, 0.753);
+}
+
+.error.hide {
+	display: none;
+}
+
+/*Button Start Time*/
+.button {
+	padding: 10px 25px;
+	text-align: center;
+	transition-duration: 0.4s;
+	cursor: pointer;
+
+	font-family: Monotype Corsiva;
+	font-size: 185%;
+	margin-top: 35px;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	letter-spacing: 1.2px;
+
+	background-color: white;
+	color: black;
+	border: 2px solid #325d9e;
+}
+
+.button:hover {
+	background-color: #325d9e;
+	color: white;
+}
+
+/*Timer*/
+#timer {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#timer.hide {
+	display: none;
+}
+
+#timer label {
+	font-size: 330%;
+}
+
+#timeDisplay span {
+	font-size: 1430%;
+	font-style: italic;
+	color: #001f3f;
+}
+
+.btn1 {
+	font-size: 290%;
+	width: 30%;
+}
+
+#pausestarttimer {
+	margin-right: 50px;
+}
+
+/*Times Over*/
+#timesOver {
+	margin-top: 50px;
+	border-radius: 10px;
+	padding: 85px 0px;
+	width: 60%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#timesOver label {
+	font-size: 1000%;
+	width: 100%;
+	display: block;
+}
+
+.btn2 {
+	font-size: 250%;
+	width: 20%;
+}
+
+#timesOver.hide {
+	display: none;
+}
+
+@media only screen and (max-width: 1209px) {
+	#divmainImage {
+		margin-top: 40px;
+		width: 60%;
+	}
+
+	#todolistmainImage {
+		width: 20%;
+		height: 230px;
+	}
+
+	#todolistapp label {
+		font-size: 220%;
+	}
+
+	#inputContainer {
+		margin-top: 30px;
+		width: 55%;
+	}
+
+	.add input {
+		font-size: 115%;
+	}
+
+	#addtime label {
+		font-size: 160%;
+	}
+
+	.button {
+		font-size: 165%;
+		margin-top: 30px;
+	}
+
+	#timeDisplay span {
+		font-size: 1230%;
+	}
+
+	#timesOver label {
+		font-size: 480%;
+	}
+}
+
+@media only screen and (max-width: 795px) {
+	#addtask input {
+		text-indent: 7.5%;
+	}
+
+	#addtime label {
+		font-size: 140%;
+	}
+
+	#timeDisplay span {
+		font-size: 1030%;
+	}
+}

@@ -1,0 +1,287 @@
+main {
+	text-align: center;
+}
+
+#todolistapp label {
+	width: 100%;
+	font-family: Monotype Corsiva;
+	font-size: 250%;
+}
+
+#todolistapp {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#divmainImage {
+	margin-top: 50px;
+	width: 55%;
+}
+
+#todolistmainImage {
+	width: 18%;
+	height: 250px;
+}
+
+/*Add input*/
+#add {
+	width: 100%;
+	position: relative;
+}
+
+#add img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 33.5%;
+	width: 23px;
+	height: 23px;
+}
+
+#add img.errorAdd {
+	top: 37%;
+	transform: translateY(-37%);
+}
+
+#add input {
+	font-size: 125%;
+	width: 35%;
+	padding: 12px 0px;
+	text-indent: 6.5%;
+	margin-top: 40px;
+	margin-bottom: 35px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add input.errorAdd {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+#add i {
+	position: absolute;
+	top: 52%;
+	transform: translateY(-50%);
+	left: 66%;
+	color: #aaaaaa;
+	font-size: 1.2rem;
+}
+
+#add i.errorAdd {
+	top: 38%;
+	transform: translateY(-38%);
+}
+
+.error {
+	display: block;
+	font-size: 125%;
+	margin-bottom: 30px;
+	color: rgba(139, 0, 0, 0.753);
+}
+
+.error.hide {
+	display: none;
+}
+
+/*Task input*/
+.task {
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.task input[type="checkbox"] {
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	transform: translateY(-50%);
+	left: 33.5%;
+	width: 20px;
+	height: 20px;
+}
+
+.task input {
+	font-size: 125%;
+	width: 35%;
+	padding: 12px 0px;
+	text-indent: 6.5%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	color: black;
+	background-color: rgb(247, 247, 247);
+}
+
+.taskChecked {
+	text-decoration: line-through;
+	background-color: #e5f6fce5 !important;
+	color: rgb(24, 24, 24);
+	transform: rotateX(360deg);
+	transition: transform 1s ease;
+	pointer-events: none;
+	font-size: 500%;
+}
+
+.task i {
+	position: absolute;
+	top: 52%;
+	transform: translateY(-50%);
+	left: 66%;
+	color: #aaaaaa;
+	font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1500px) {
+	#divmainImage {
+		width: 60%;
+	}
+
+	/*Add input*/
+	#add img {
+		left: 28.5%;
+	}
+
+	#add input {
+		text-indent: 6.5%;
+		width: 45%;
+	}
+
+	#add i {
+		left: 70%;
+	}
+
+	/*Task input*/
+	.task input[type="checkbox"] {
+		left: 28.5%;
+	}
+
+	.task input {
+		text-indent: 6.5%;
+		width: 45%;
+	}
+
+	.task i {
+		left: 70%;
+	}
+}
+
+@media only screen and (max-width: 1233px) {
+	#divmainImage {
+		width: 75%;
+	}
+
+	/*Add input*/
+	#add img {
+		left: 26.5%;
+	}
+
+	#add input {
+		text-indent: 7.5%;
+		font-size: 100%;
+		width: 50%;
+	}
+
+	#add i {
+		left: 72.5%;
+	}
+
+	/*Task input*/
+	.task input[type="checkbox"] {
+		left: 26.5%;
+	}
+
+	.task input {
+		text-indent: 7.5%;
+		font-size: 100%;
+		width: 50%;
+	}
+
+	.task i {
+		left: 72.5%;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	#divmainImage {
+		width: 85%;
+	}
+
+	/*Add input*/
+	#add img {
+		left: 24.5%;
+	}
+
+	#add input {
+		text-indent: 9%;
+		font-size: 100%;
+		width: 55%;
+	}
+
+	#add i {
+		left: 74%;
+	}
+
+	/*Task input*/
+	.task input[type="checkbox"] {
+		left: 24.5%;
+	}
+
+	.task input {
+		text-indent: 8.5%;
+		font-size: 100%;
+		width: 55%;
+	}
+
+	.task i {
+		left: 74%;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	#divmainImage {
+		width: 195%;
+		margin-top: 30px;
+	}
+
+	#divmainImage img {
+		height: 230px;
+	}
+
+	/*Add input*/
+	#add img {
+		left: 18%;
+	}
+
+	#add input {
+		text-indent: 9%;
+		font-size: 100%;
+		width: 68%;
+	}
+
+	#add i {
+		left: 80%;
+	}
+
+	/*Task input*/
+	.task input[type="checkbox"] {
+		left: 18%;
+	}
+
+	.task input {
+		text-indent: 8%;
+		font-size: 100%;
+		width: 68%;
+	}
+
+	.task i {
+		left: 80%;
+	}
+
+	.error {
+		font-size: 90%;
+	}
+}

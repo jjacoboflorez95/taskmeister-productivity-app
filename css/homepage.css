@@ -1,0 +1,237 @@
+/*Home Page*/
+
+#mainimage {
+	width: 100%;
+	height: 950px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#apps {
+	margin-top: 100px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	gap: 70px;
+	align-items: center;
+	letter-spacing: 0.8px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-radius: 10px;
+	padding: 15px 0px;
+	width: 30%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#apps h2 {
+	font-family: Monotype Corsiva;
+	font-size: 250%;
+	font-style: italic;
+}
+
+#apps img {
+	width: 65%;
+	height: 500px;
+}
+
+#apps p {
+	font-size: 135%;
+	width: 65%;
+	line-height: 25px;
+}
+
+section a {
+	background-color: white;
+	color: black;
+	border: 2px solid #325d9e;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 10px 20px;
+	text-align: center;
+	width: 40%;
+	transition: all 0.4s ease;
+	margin-bottom: 20px;
+	font-size: 110%;
+	font-style: italic;
+}
+
+section a:hover {
+	background-color: #325d9e;
+	color: white;
+}
+
+@media only screen and (max-width: 1900px) {
+	#mainimage {
+		height: 850px;
+	}
+
+	#apps {
+		gap: 50px;
+	}
+
+	#apps img {
+		width: 65%;
+		height: 370px;
+	}
+
+	section {
+		height: 680px;
+	}
+
+	section a {
+		width: 45%;
+		font-size: 110%;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#mainimage {
+		height: 750px;
+	}
+
+	#apps img {
+		width: 65%;
+		height: 280px;
+	}
+
+	#apps p {
+		font-size: 120%;
+		width: 70%;
+		line-height: 22px;
+	}
+
+	section {
+		height: 600px;
+	}
+
+	section a {
+		width: 50%;
+		font-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	#mainimage {
+		height: 650px;
+	}
+
+	#apps {
+		gap: 40px;
+	}
+
+	#apps img {
+		width: 60%;
+		height: 270px;
+	}
+
+	#apps p {
+		font-size: 100%;
+	}
+
+	section {
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 944px) {
+	#mainimage {
+		height: 650px;
+	}
+
+	#apps {
+		flex-wrap: wrap;
+	}
+
+	.myDiv section:first-child {
+		flex-grow: 1;
+	}
+
+	.myDiv section:nth-child(2) {
+		flex-grow: 1;
+	}
+
+	#apps h2 {
+		font-size: 220%;
+	}
+
+	#apps p {
+		font-size: 90%;
+		width: 70%;
+		line-height: 22px;
+	}
+
+	section {
+		height: 530px;
+		width: 40%;
+	}
+
+	section a {
+		width: 50%;
+		font-size: 85%;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	#apps {
+		gap: 90px;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	section {
+		height: 520px;
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#apps {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	#apps img {
+		height: 250px;
+	}
+
+	section {
+		height: 500px;
+		width: 75%;
+		padding-top: 5px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#apps {
+		gap: 40px;
+		margin-top: 70px;
+	}
+
+	#apps h2 {
+		font-size: 200%;
+		margin: 20px 0px;
+	}
+
+	#apps img {
+		height: 200px;
+	}
+
+	section {
+		height: 450px;
+		width: 90%;
+		padding-top: 5px;
+	}
+
+	#apps p {
+		font-size: 90%;
+	}
+
+	section a {
+		width: 50%;
+		font-size: 82%;
+	}
+}
