@@ -10,7 +10,7 @@ body {
 #menu {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 21px;
+	padding: 16px;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
 	top: 0;
 	width: 100%;
 	border-bottom: 1px solid #ccc;
-	height: 87px;
+	height: 70px;
 	background-color: #e5f6fce5;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +32,7 @@ header h1 {
 	color: black;
 	margin: 0;
 	margin-left: 10px;
-	font-size: 250%;
+	font-size: 200%;
 	transition: all 1s ease;
 }
 
@@ -42,18 +42,18 @@ header nav {
 	flex-grow: 1;
 	text-align: left;
 	justify-content: flex-end;
-	gap: 50px;
-	margin-right: 80px;
+	gap: 40px;
+	margin-right: 40px;
 }
 
 header nav a {
 	color: black;
-	font-size: 142%;
+	font-size: 110%;
 	transition: all 1s ease;
 }
 
 header nav a:hover {
-	font-size: 170%;
+	font-size: 130%;
 	/*transition-duration: 1s;*/
 }
 
@@ -66,7 +66,7 @@ a {
 }
 
 main {
-	margin-top: 87px;
+	margin-top: 70px;
 	flex-grow: 1;
 }
 
@@ -75,7 +75,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1000px;
-	padding: 60px 50px 10px 50px;
+	padding: 40px 50px 10px 50px;
 	justify-content: center;
 	background-color: rgba(190, 190, 190, 0.384);
 	text-align: center;
@@ -87,7 +87,7 @@ footer {
 	justify-content: space-around;
 	gap: 45px;
 	width: 100%;
-	margin-bottom: 50px;
+	margin-bottom: 20x;
 }
 
 #linksfooter a {
