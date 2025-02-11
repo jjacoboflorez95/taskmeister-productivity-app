@@ -1,287 +1,155 @@
 main {
-	text-align: center;
+    text-align: center;
 }
 
-#todolistapp label {
-	width: 100%;
-	font-family: Monotype Corsiva;
-	font-size: 250%;
-}
-
+/* 📝 Contenedor Principal */
 #todolistapp {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
+/* 🖼 Imagen Principal */
 #divmainImage {
-	margin-top: 50px;
-	width: 55%;
+    margin-top: 40px;
+    width: 20%;
+    max-width: 130px;
 }
 
 #todolistmainImage {
-	width: 18%;
-	height: 250px;
+    width: 100%;
+    height: auto;
 }
 
-/*Add input*/
-#add {
-	width: 100%;
-	position: relative;
-}
-
-#add img {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 33.5%;
-	width: 23px;
-	height: 23px;
-}
-
-#add img.errorAdd {
-	top: 37%;
-	transform: translateY(-37%);
-}
-
-#add input {
-	font-size: 125%;
-	width: 35%;
-	padding: 12px 0px;
-	text-indent: 6.5%;
-	margin-top: 40px;
-	margin-bottom: 35px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#add input.errorAdd {
-	margin-top: 30px;
-	margin-bottom: 5px;
-}
-
-#add i {
-	position: absolute;
-	top: 52%;
-	transform: translateY(-50%);
-	left: 66%;
-	color: #aaaaaa;
-	font-size: 1.2rem;
-}
-
-#add i.errorAdd {
-	top: 38%;
-	transform: translateY(-38%);
-}
-
-.error {
-	display: block;
-	font-size: 125%;
-	margin-bottom: 30px;
-	color: rgba(139, 0, 0, 0.753);
-}
-
-.error.hide {
-	display: none;
-}
-
-/*Task input*/
-.task {
-	width: 100%;
+/* 📌 Estilos del Label */
+#todolistapp label {
+    font-family: Monotype Corsiva, cursive;
+    font-size: 2rem;
 	margin-bottom: 15px;
-	position: relative;
 }
 
+/* 🎯 Contenedor de Input */
+#add, .task {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📝 Input Estilizado */
+#add input, .task input {
+    font-size: 1rem;
+    width: 60%;
+    padding: 10px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-indent: 2px;
+}
+
+/* 📌 Imagen Dentro del Input */
+#add img {
+    position: absolute;
+    left: 17%;
+    width: 18px;
+    height: 18px;
+}
+
+/* ➕ Icono de Agregar Tarea */
+#add i {
+    position: absolute;
+    right: 16.5%;
+    font-size: 1rem;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+/* ✅ Checkbox Dentro del Input */
 .task input[type="checkbox"] {
-	position: absolute;
-	top: 50%;
-	margin: 0;
-	transform: translateY(-50%);
-	left: 33.5%;
-	width: 20px;
-	height: 20px;
+    position: absolute;
+    left: 16.5%;
+    width: 18px;
+    height: 18px;
 }
 
-.task input {
-	font-size: 125%;
-	width: 35%;
-	padding: 12px 0px;
-	text-indent: 6.5%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	color: black;
-	background-color: rgb(247, 247, 247);
-}
-
-.taskChecked {
-	text-decoration: line-through;
-	background-color: #e5f6fce5 !important;
-	color: rgb(24, 24, 24);
-	transform: rotateX(360deg);
-	transition: transform 1s ease;
-	pointer-events: none;
-	font-size: 500%;
-}
-
+/* ❌ Icono de Borrar */
 .task i {
-	position: absolute;
-	top: 52%;
-	transform: translateY(-50%);
-	left: 66%;
-	color: #aaaaaa;
-	font-size: 1.3rem;
+    position: absolute;
+    right: 16.5%;
+    font-size: 1rem;
+    color: #aaaaaa;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 1500px) {
-	#divmainImage {
-		width: 60%;
-	}
-
-	/*Add input*/
-	#add img {
-		left: 28.5%;
-	}
-
-	#add input {
-		text-indent: 6.5%;
-		width: 45%;
-	}
-
-	#add i {
-		left: 70%;
-	}
-
-	/*Task input*/
-	.task input[type="checkbox"] {
-		left: 28.5%;
-	}
-
-	.task input {
-		text-indent: 6.5%;
-		width: 45%;
-	}
-
-	.task i {
-		left: 70%;
-	}
+/* 🎯 Tarea Completada */
+.taskChecked {
+    text-decoration: line-through;
+    background-color: #e5f6fce5 !important;
+    transform: rotateX(360deg);
+    transition: transform 1s ease;
+    pointer-events: none;
 }
 
-@media only screen and (max-width: 1233px) {
-	#divmainImage {
-		width: 75%;
-	}
+/* 📌 Diseño Responsivo sin Excesivos @media */
+@media (max-width: 1000px) {
+    #divmainImage {
+        width: 25%;
+    }
 
-	/*Add input*/
-	#add img {
-		left: 26.5%;
-	}
+    #add input, .task input {
+        width: 70%;
+    }
 
-	#add input {
-		text-indent: 7.5%;
-		font-size: 100%;
-		width: 50%;
-	}
+    #add img, .task input[type="checkbox"] {
+        left: 12%;
+    }
 
-	#add i {
-		left: 72.5%;
-	}
-
-	/*Task input*/
-	.task input[type="checkbox"] {
-		left: 26.5%;
-	}
-
-	.task input {
-		text-indent: 7.5%;
-		font-size: 100%;
-		width: 50%;
-	}
-
-	.task i {
-		left: 72.5%;
-	}
+    #add i, .task i {
+        right: 12%;
+    }
 }
 
-@media only screen and (max-width: 920px) {
-	#divmainImage {
-		width: 85%;
-	}
+@media (max-width: 800px) {
+    #divmainImage {
+        width: 30%;
+    }
 
-	/*Add input*/
-	#add img {
-		left: 24.5%;
-	}
+    #add input, .task input {
+        width: 75%;
+		text-indent: 10px;
+    }
 
-	#add input {
-		text-indent: 9%;
-		font-size: 100%;
-		width: 55%;
-	}
+    #add img, .task input[type="checkbox"] {
+        left: 10%;
+    }
 
-	#add i {
-		left: 74%;
-	}
-
-	/*Task input*/
-	.task input[type="checkbox"] {
-		left: 24.5%;
-	}
-
-	.task input {
-		text-indent: 8.5%;
-		font-size: 100%;
-		width: 55%;
-	}
-
-	.task i {
-		left: 74%;
-	}
+    #add i, .task i {
+        right: 10%;
+    }
 }
 
-@media only screen and (max-width: 760px) {
-	#divmainImage {
-		width: 195%;
-		margin-top: 30px;
-	}
+@media (max-width: 600px) {
+    #divmainImage {
+        width: 35%;
+    }
 
-	#divmainImage img {
-		height: 230px;
-	}
+    #add input, .task input {
+        width: 80%;
+		text-indent: 15px;
+    }
 
-	/*Add input*/
-	#add img {
-		left: 18%;
-	}
+    #add img, .task input[type="checkbox"] {
+        left: 8%;
+    }
 
-	#add input {
-		text-indent: 9%;
-		font-size: 100%;
-		width: 68%;
-	}
-
-	#add i {
-		left: 80%;
-	}
-
-	/*Task input*/
-	.task input[type="checkbox"] {
-		left: 18%;
-	}
-
-	.task input {
-		text-indent: 8%;
-		font-size: 100%;
-		width: 68%;
-	}
-
-	.task i {
-		left: 80%;
-	}
-
-	.error {
-		font-size: 90%;
-	}
+    #add i, .task i {
+        right: 8%;
+    }
 }
