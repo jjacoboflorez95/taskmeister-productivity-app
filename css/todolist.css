@@ -2,7 +2,7 @@ main {
     text-align: center;
 }
 
-/* 📝 Contenedor Principal */
+/* Main Container */
 #todolistapp {
     display: flex;
     flex-direction: column;
@@ -15,9 +15,9 @@ main {
     padding: 20px;
 }
 
-/* 🖼 Imagen Principal */
+/* Main Image */
 #divmainImage {
-    margin-top: 40px;
+    margin-top: 50px;
     width: 20%;
     max-width: 130px;
 }
@@ -27,14 +27,14 @@ main {
     height: auto;
 }
 
-/* 📌 Estilos del Label */
+/* Label Styling */
 #todolistapp label {
     font-family: Monotype Corsiva, cursive;
     font-size: 2rem;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-/* 🎯 Contenedor de Input */
+/* Input Container */
 #add, .task {
     width: 100%;
     position: relative;
@@ -43,7 +43,7 @@ main {
     justify-content: center;
 }
 
-/* 📝 Input Estilizado */
+/* Styled Input */
 #add input, .task input {
     font-size: 1rem;
     width: 60%;
@@ -54,7 +54,7 @@ main {
     text-indent: 2px;
 }
 
-/* 📌 Imagen Dentro del Input */
+/* Image Inside Input */
 #add img {
     position: absolute;
     left: 17%;
@@ -62,7 +62,7 @@ main {
     height: 18px;
 }
 
-/* ➕ Icono de Agregar Tarea */
+/* Add Task Icon */
 #add i {
     position: absolute;
     right: 16.5%;
@@ -71,7 +71,7 @@ main {
     cursor: pointer;
 }
 
-/* ✅ Checkbox Dentro del Input */
+/* Checkbox Inside Input */
 .task input[type="checkbox"] {
     position: absolute;
     left: 16.5%;
@@ -79,7 +79,7 @@ main {
     height: 18px;
 }
 
-/* ❌ Icono de Borrar */
+/* Delete Task Icon */
 .task i {
     position: absolute;
     right: 16.5%;
@@ -88,7 +88,7 @@ main {
     cursor: pointer;
 }
 
-/* 🎯 Tarea Completada */
+/* Completed Task Styling */
 .taskChecked {
     text-decoration: line-through;
     background-color: #e5f6fce5 !important;
@@ -97,7 +97,7 @@ main {
     pointer-events: none;
 }
 
-/* 📌 Diseño Responsivo sin Excesivos @media */
+/* Responsive Design */
 @media (max-width: 1000px) {
     #divmainImage {
         width: 25%;
@@ -123,7 +123,7 @@ main {
 
     #add input, .task input {
         width: 75%;
-		text-indent: 10px;
+        text-indent: 10px;
     }
 
     #add img, .task input[type="checkbox"] {
@@ -142,7 +142,7 @@ main {
 
     #add input, .task input {
         width: 80%;
-		text-indent: 15px;
+        text-indent: 15px;
     }
 
     #add img, .task input[type="checkbox"] {
