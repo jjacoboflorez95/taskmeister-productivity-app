@@ -51,7 +51,7 @@ const changeView = () => {
 	if ($("#addseecontacts").text() == "See Contacts") {
 		contentToDisplay("form", "table");
 		$("#addseecontacts").fadeOut(500, function () {
-			$("#addseecontacts").text("See registration form").fadeIn(500);
+			$("#addseecontacts").text("See registration form").fadeIn(500);			
 		});
 	} else {
 		contentToDisplay("table", "form");
