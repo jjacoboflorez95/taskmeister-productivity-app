@@ -1,4 +1,4 @@
-/*Clock Reminder App*/
+/*Task Timer App*/
 "use strict";
 
 // Global variables

@@ -3,7 +3,7 @@ main {
 }
 
 /* Main container */
-#clockreminderapp {
+#tasktimerapp {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +22,13 @@ main {
     max-width: 130px;
 }
 
-#clockremindermainImage {
+#tasktimermainImage {
     width: 100%;
     height: auto;
 }
 
 /* Label styling */
-#clockreminderapp label {
+#tasktimerapp label {
     font-family: Monotype Corsiva, cursive;
     font-size: 2rem;
     margin-bottom: 15px;
@@ -183,7 +183,7 @@ main {
         width: 30%;
     }
 
-    #clockreminderapp label {
+    #tasktimerapp label {
         font-size: 1.8rem;
     }
 
@@ -217,7 +217,7 @@ main {
         width: 40%;
     }
 
-    #clockreminderapp label {
+    #tasktimerapp label {
         font-size: 1.5rem;
     }
 
