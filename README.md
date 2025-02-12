@@ -26,18 +26,18 @@
 │   ├── todolist.css        # Styles for the To-Do List
 │   ├── tasktimer.css       # Styles for the Task Timer
 │   ├── contactlist.css     # Styles for the Contact List
-├── 📁 js/                   # JavaScript files
+├── 📁 js/                  # JavaScript files
 │   ├── homepage.js         # Homepage interactions
 │   ├── todolist.js         # To-Do List functionality
 │   ├── tasktimer.js        # Task Timer logic
 │   ├── contactlist.js      # Contact List management
-├── 📁 webpages/             # HTML pages
+├── 📁 webpages/            # HTML pages
 │   ├── index.html          # Homepage
 │   ├── todolist.html       # To-Do List Page
 │   ├── tasktimer.html      # Task Timer Page
 │   ├── contactlist.html    # Contact List Page
-├── 📁 imgs/                 # Image assets
-├── 📁 audio/                # Alarm sounds for the timer
+├── 📁 imgs/                # Image assets
+├── 📁 audio/               # Alarm sounds for the timer
 ```
 
 ---
