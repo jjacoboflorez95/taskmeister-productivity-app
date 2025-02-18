@@ -1,0 +1,243 @@
+main {
+	text-align: center;
+}
+
+/*MainDiv*/
+#contaclistapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Título */
+#contaclistapp h2 {
+    width: 100%;
+    font-family: Monotype Corsiva;
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+/* Imagen del App */
+#divmainImage {
+    margin-top: 50px;
+    width: 20%;
+    max-width: 130px;
+}
+
+#contaclistmainImage {
+    width: 100%;
+    height: auto;
+}
+
+/*Button general Style*/
+.button {
+	padding: 6px 10px;
+	text-align: center;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: Monotype Corsiva;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	background-color: white;
+	color: black;
+	border: 2px solid #325d9e;
+}
+
+.button:hover,
+#submitResetDiv input:hover {
+	background-color: #325d9e;
+	color: white;
+}
+
+/*Button See Contacts*/
+#addseecontacts {
+	width: 12%;
+	font-size: 1.5rem;
+	letter-spacing: 1.2px;
+	margin-bottom: 30px;
+}
+
+/*Span Error*/
+.error,
+.success {
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: right;
+	margin-right: 3%;
+}
+
+.error {
+	font-size: 1rem;
+	color: rgba(139, 0, 0, 0.753);
+}
+
+.success {
+	opacity: 0;
+	font-size: 1.8rem;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-family: Monotype Corsiva;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	color: rgba(0, 139, 0, 0.753);
+}
+
+.success.hide {
+	display: none;
+}
+
+/*Form*/
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+}
+
+form.hide {
+	display: none;
+}
+
+form label {
+	font-size: 1.1rem;
+	margin-left: 12%;
+	width: 13%;
+	text-align: left;
+}
+
+/*Form Each Row*/
+.formdiv {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.formdiv input,
+.formdiv select {
+	width: 74%;
+
+	font-size: 1rem;
+	padding: 10px 0px;
+	text-indent: 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formdiv span {
+	width: 1%;
+}
+
+/*Form Div - Birthday and Kinship*/
+.formdiv.birthdaykinship label:last-of-type {
+	width: 9%;
+	margin-right: 0.1%;
+	margin-left: 0;
+}
+
+.formdiv.birthdaykinship input[type="date"] {
+	width: 27%;
+	margin-right: 10.9%;
+}
+
+.formdiv.birthdaykinship select {
+	width: 27%;
+}
+
+#submitResetDiv {
+	display: flex;
+	justify-content: center;
+	gap: 45px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#submitResetDiv input {
+	margin-top: 20px;
+	width: 18%;
+	font-size: 1.5rem;
+	letter-spacing: 0px;
+}
+
+/*Table*/
+table {
+	width: 80%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table.hide {
+	display: none;
+}
+
+table,
+th {
+	border-top: 1px solid rgb(162, 232, 253);
+	border-bottom: 1px solid rgb(162, 232, 253);
+}
+
+.nocontacts {
+	font-size: 2rem;
+	letter-spacing: 1px;
+	font-family: Monotype Corsiva;
+}
+
+th
+{
+	padding: 14px;
+	font-size: 1.05rem;
+}
+
+td {
+	padding: 12px;
+	font-size: 1rem;
+}
+
+tr:nth-of-type(even) {
+	background-color: rgba(215, 244, 253, 0.918);
+}
+
+tr:nth-of-type(odd) {
+	background-color: white;
+}
+
+@media only screen and (max-width: 1440px) {
+	/*Button See Contacts*/
+	#addseecontacts {
+		width: 14%;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 1170px) {
+	form {
+		width: 75%;
+	}
+
+	/*Button See Contacts*/
+	#addseecontacts {
+		width: 16%;
+		font-size: 1.5rem;
+	}
+
+	#submitResetDiv input {
+		width: 25%;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 978px) {
+	/*Button See Contacts*/
+	#addseecontacts {
+		width: 20%;
+		font-size: 1.5rem;
+	}
+}

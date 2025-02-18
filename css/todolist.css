@@ -1,0 +1,155 @@
+main {
+    text-align: center;
+}
+
+/* Main Container */
+#todolistapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Main Image */
+#divmainImage {
+    margin-top: 50px;
+    width: 20%;
+    max-width: 130px;
+}
+
+#todolistmainImage {
+    width: 100%;
+    height: auto;
+}
+
+/* Label Styling */
+#todolistapp label {
+    font-family: Monotype Corsiva, cursive;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Input Container */
+#add, .task {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styled Input */
+#add input, .task input {
+    font-size: 1rem;
+    width: 60%;
+    padding: 10px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-indent: 2px;
+}
+
+/* Image Inside Input */
+#add img {
+    position: absolute;
+    left: 17%;
+    width: 18px;
+    height: 18px;
+}
+
+/* Add Task Icon */
+#add i {
+    position: absolute;
+    right: 16.5%;
+    font-size: 1rem;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+/* Checkbox Inside Input */
+.task input[type="checkbox"] {
+    position: absolute;
+    left: 16.5%;
+    width: 18px;
+    height: 18px;
+}
+
+/* Delete Task Icon */
+.task i {
+    position: absolute;
+    right: 16.5%;
+    font-size: 1rem;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+/* Completed Task Styling */
+.taskChecked {
+    text-decoration: line-through;
+    background-color: #e5f6fce5 !important;
+    transform: rotateX(360deg);
+    transition: transform 1s ease;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    #divmainImage {
+        width: 25%;
+    }
+
+    #add input, .task input {
+        width: 70%;
+    }
+
+    #add img, .task input[type="checkbox"] {
+        left: 12%;
+    }
+
+    #add i, .task i {
+        right: 12%;
+    }
+}
+
+@media (max-width: 800px) {
+    #divmainImage {
+        width: 30%;
+    }
+
+    #add input, .task input {
+        width: 75%;
+        text-indent: 10px;
+    }
+
+    #add img, .task input[type="checkbox"] {
+        left: 10%;
+    }
+
+    #add i, .task i {
+        right: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    #divmainImage {
+        width: 35%;
+    }
+
+    #add input, .task input {
+        width: 80%;
+        text-indent: 15px;
+    }
+
+    #add img, .task input[type="checkbox"] {
+        left: 8%;
+    }
+
+    #add i, .task i {
+        right: 8%;
+    }
+}

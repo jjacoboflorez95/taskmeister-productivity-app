@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskMeister</title>
+	<link rel="stylesheet" href="../css/main.css">	
+    <link rel="stylesheet" href="../css/tasktimer.css">		
+    <script src="https://kit.fontawesome.com/f3f8e8c10c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<div id="menu">
+			<a id="logoheader" href="../index.html"><h1>TaskMeister</h1></a>
+			<nav>
+				<a href="todolist.html">To-do List</a>
+				<a href="tasktimer.html">Task Timer</a>
+				<a href="contactlist.html">Contact List</a>
+			</nav>
+		</div>		
+	</header>	
+	<main>		        
+		<div id="tasktimerapp">
+            <div id="divmainImage">
+                <img id="tasktimermainImage" src="../imgs/clock2_image.png" alt="tasktimermainImage">
+            </div>	
+            <label for="">Enjoy your <span id="currentDaySalute">day</span>!</label>
+            <div id="inputContainer">
+                <div id="addtask" class="add">
+                    <img src="../imgs/handtakingnotes2.png" alt="">
+                    <input type="text" placeholder="Add Task..." name="addtask">                    
+                </div>	
+                <div id="addtime" class="add">                
+                    <input type="text" placeholder="Set time..." name="addtime">                
+                    <div id="timeoptions">
+                        <label for="minutes">Minutes</label>
+                        <input id="timeoption1" type="radio" name="timeoption" value="minutes" checked>
+                        <label for="hours">Hours</label>
+                        <input id="timeoption2" type="radio" name="timeoption" value="hours">
+                    </div>
+                </div>   
+                <span class="error hide"></span>
+                <button id="startimer" class="button">Start timer</button>
+            </div>
+            <div id="timer" class="hide">
+                <label></label>                   
+                <div id="timeDisplay">
+                    <span id="hours">01</span><span>:</span>
+                    <span id="minutes">45</span><span>:</span>
+                    <span id="seconds">12</span>&nbsp;                                    
+                </div>
+                <button id="pausestarttimer" class="button btn1">Pause</button>
+                <button id="canceltimer" class="button btn1">Cancel</button>                
+            </div>
+            <div id="timesOver" class="hide">
+                <label for="">Times Over!</label>
+                <button id="stoptimesover" class="button btn2">Stop</button>                
+            </div>      
+            <audio id="timerAlarm" loop>
+                <source src="../audio/Clock-chimes-sounds.mp3" type="audio/mpeg">
+            </audio>
+		</div>
+	</main>
+	<footer>
+		<div id="divfooter">
+			<div id="linksfooter">
+				<a href="todolist.html">To-do List</a>
+				<a href="tasktimer.html">Task Timer</a>
+				<a href="contactlist.html">Contact List</a>		
+			</div>
+			<p>Copyright&copy; Juan Jacobo Florez Monroy</p>
+		</div>
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   	<script src="../js/tasktimer.js"></script>   
+</body>
+</html>

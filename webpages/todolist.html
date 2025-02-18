@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskMeister</title>
+	<link rel="stylesheet" href="../css/main.css">	
+    <link rel="stylesheet" href="../css/todolist.css">		
+    <script src="https://kit.fontawesome.com/f3f8e8c10c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<div id="menu">
+			<a id="logoheader" href="../index.html"><h1>TaskMeister</h1></a>
+			<nav>
+				<a href="todolist.html">To-do List</a>
+				<a href="tasktimer.html">Task Timer</a>
+				<a href="contactlist.html">Contact List</a>
+			</nav>
+		</div>		
+	</header>
+	<main>		        
+		<div id="todolistapp">
+            <div id="divmainImage">
+                <img id="todolistmainImage" src="../imgs/todolist_image.png" alt="todolistmainImage">
+            </div>	
+            <label for="">Enjoy your <span id="currentDaySalute">day</span>!</label>
+            <div id="add">
+                <img src="../imgs/handtakingnotes2.png" alt="">
+                <input type="text" placeholder="Add item..." name="additem">
+                <i class="fas fa-plus"></i>
+				<span class="error hide"></span>
+            </div>
+		</div>
+	</main>
+	<footer>
+		<div id="divfooter">
+			<div id="linksfooter">
+				<a href="todolist.html">To-do List</a>
+				<a href="tasktimer.html">Task Timer</a>
+				<a href="contactlist.html">Contact List</a>		
+			</div>
+			<p>Copyright&copy; Juan Jacobo Florez Monroy</p>
+		</div>
+	</footer>	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   	<script src="../js/todolist.js"></script>   
+</body>
+</html>

@@ -1,0 +1,247 @@
+main {
+    text-align: center;
+}
+
+/* Main container */
+#tasktimerapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image container */
+#divmainImage {
+    margin-top: 40px;
+    width: 20%;
+    max-width: 130px;
+}
+
+#tasktimermainImage {
+    width: 100%;
+    height: auto;
+}
+
+/* Label styling */
+#tasktimerapp label {
+    font-family: Monotype Corsiva, cursive;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Input container */
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Hide elements */
+#inputContainer.hide, #timer.hide, #timesOver.hide {
+    display: none;
+}
+
+/* Input sections */
+.add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* General input styling */
+.add input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon inside inputs */
+.add img {
+    position: absolute;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Time input and options */
+#addtime {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#addtime input {
+    width: 20%;
+}
+
+#timeoptions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#timeoptions label {
+    font-size: 1.4rem;
+	margin-bottom: 0px;
+}
+
+/* Error messages */
+.error {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(139, 0, 0, 0.753);
+}
+
+.error.hide {
+    display: none;
+}
+
+/* Buttons */
+.button {
+    padding: 8px 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    font-family: Monotype Corsiva;
+    font-size: 1.7rem;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+    border: 2px solid #325d9e;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #325d9e;
+    color: white;
+}
+
+/* Timer section */
+#timer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#timer label {
+    font-size: 3.5rem;
+}
+
+#timeDisplay span {
+    font-size: 7rem;
+    font-style: italic;
+    color: #001f3f;
+}
+
+/* Timer buttons */
+.btn1 {
+    font-size: 1.6rem;
+    margin: 10px;
+}
+
+/* Times Over section */
+#timesOver {
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#timesOver label {
+    font-size: 6.5rem;
+}
+
+.btn2 {
+    font-size: 1.6rem;
+    margin-top: 10px; 
+    align-self: center;
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #divmainImage {
+        width: 30%;
+    }
+
+    #tasktimerapp label {
+        font-size: 1.8rem;
+    }
+
+    #inputContainer {
+        max-width: 500px;
+    }
+
+    #addtime input {
+        width: 55%;
+    }
+
+    #timeoptions label {
+        font-size: 0.9rem;
+    }
+
+    #timer label {
+        font-size: 2rem;
+    }
+
+    #timeDisplay span {
+        font-size: 5rem;
+    }
+
+    #timesOver label {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #divmainImage {
+        width: 40%;
+    }
+
+    #tasktimerapp label {
+        font-size: 1.5rem;
+    }
+
+    #inputContainer {
+        max-width: 400px;
+    }
+
+    #addtime input {
+        width: 60%;
+    }
+
+    #timeoptions label {
+        font-size: 0.8rem;
+    }
+
+    #timer label {
+        font-size: 1.8rem;
+    }
+
+    #timeDisplay span {
+        font-size: 4rem;
+    }
+
+    #timesOver label {
+        font-size: 2rem;
+    }
+}

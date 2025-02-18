@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #fafaf2;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#menu {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	height: 70px;
+	background-color: #e5f6fce5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logoheader {
+	flex-grow: 2;
+}
+
+header h1 {
+	font-family: Monotype Corsiva;
+	color: black;
+	margin: 0;
+	margin-left: 10px;
+	font-size: 200%;
+	transition: all 1s ease;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	text-align: left;
+	justify-content: flex-end;
+	gap: 40px;
+	margin-right: 40px;
+}
+
+header nav a {
+	color: black;
+	font-size: 110%;
+	transition: all 1s ease;
+}
+
+header nav a:hover {
+	font-size: 130%;
+	/*transition-duration: 1s;*/
+}
+
+header h1:hover {
+	font-size: 280%;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin-top: 70px;
+	flex-grow: 1;
+}
+
+footer {
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1000px;
+	padding: 40px 50px 10px 50px;
+	justify-content: center;
+	background-color: rgba(190, 190, 190, 0.384);
+	text-align: center;
+	color: gray;
+}
+
+#linksfooter {
+	display: flex;
+	justify-content: space-around;
+	gap: 45px;
+	width: 100%;
+	margin-bottom: 20x;
+}
+
+#linksfooter a {
+	color: rgb(99, 99, 99);
+	transition: all 1s ease;
+}
+
+#linksfooter a:hover {
+	font-size: 115%;
+}
+
+@media only screen and (max-width: 860px) {
+	header nav {
+		margin-right: 10px;
+		gap: 30px;
+	}
+
+	header nav a {
+		font-size: 115%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header {
+		height: 119px;
+	}
+
+	header nav {
+		gap: 30px;
+		justify-content: space-between;
+		margin-top: 5px;
+		margin-right: 0px;
+	}
+
+	header nav a {
+		font-size: 125%;
+	}
+
+	main {
+		margin-top: 119px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	header nav {
+		gap: 20px;
+	}
+
+	header nav a {
+		font-size: 115%;
+	}
+}
